@@ -1,0 +1,253 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+header{
+    width: 100%;
+    height: 100%;
+}
+#logo img{
+    width: 25%;
+    height: 25%;
+
+}
+
+#menu ul li {
+    display: inline-block;
+    color: #8b8b8b;
+    /* cor dos menus mas ainda não vai  */
+    position: relative;
+    top: 25%;
+    margin-left: 20px; 
+
+    /* espaçamento emtre as letras */
+    /*cor*/
+   
+    /* margin-top: 10px;  */
+}
+
+/*cor dos botoes*/
+#menu ul li:hover {
+    border-bottom: 3px solid #00bac6;
+}
+
+#menu ul li a:hover {
+    color: #00bac6;
+}
+
+#menu ul li a {
+    color: white;
+    /* tag do link */
+    text-decoration: none;
+    /* remove o que estava embaico  */
+    font-weight: 15px;
+    text-transform: uppercase;
+    height: 20px;
+    /* letras maiculas ou miculas ou todas letras maiculas*/
+}
+
+#menu ul {
+    background-color: black;
+    height: 50px;
+}
+#menu input{
+    position: relative;
+    top: 30%;
+    left: 8%;
+}
+#menu input:focus{
+    box-shadow: 0 0 0 0;
+    border: 1px solid #1877f2;
+    outline: 0;
+}
+#menu input{
+    border: 1px solid #dddfe2;  
+    /* border-radius: 6px; */
+    text-indent: 10px;
+    font-size: 15px;
+    height: 40%;
+    /* margin-left: 20px; */
+}
+button{
+    position: relative;
+    left: 20%;
+    top: 25%;
+    width: 100px;
+    cursor: pointer;
+    background-color: #5f5a0f;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*Até aqui header para todo o conteudo*/
+
+.slidershow {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+/*
+.middle{
+    po
+}*/
+.navegacao {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background: #fff;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -60%;
+}
+
+section{
+   
+    padding: 20px;
+    height: 800px;
+}
+
+#noticias{
+    width: 500px;
+ }
+#noticias h1{
+    background-color: brown;
+    width: 20%;
+ text-align: center;
+ color: white;
+ margin-left: 20px;
+ }
+#noticias img{
+    float: left;
+    padding: 20px;
+}
+#informacoes{
+    position: relative;
+    left: 10px;
+    width: 200%;
+    padding: 70px;
+}
+
+.tudo {
+    background-color: rgb(26, 24, 24);
+    height: 400px;
+}
+
+.menuninha {
+    padding-left: 30px;
+    color: white;
+    float: left;
+    width: 350px;
+}
+
+.menuninha h2 {
+    padding-left: 50px;
+}
+
+.menuninha ul li a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    /* float: left; horizontal */
+}
+
+.menuninha ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+.menuninha ul li a:hover {
+    text-decoration: underline;
+}
+
+.Redes h2 {
+    color: white;
+    position: absolute;
+    left: 450px;
+}
+.Redes{
+    display: inline-block;
+}
+.Redes ul {
+    list-style: none;
+    padding: 70px;
+}
+.Redes img{
+    padding: 15px;
+}
+
+.Sobre {
+    color: white;
+    width: 500px;
+    float: right;
+    position: relative;
+   
+}
+
+.Fim {
+    background-color: rgb(136, 127, 127);
+    height: 53px;
+    padding: 2px;
+}
+
+.Fim p {
+    float: left;
+    color: white;
+    margin-left: 20px;
+}
+
+
