@@ -1,0 +1,378 @@
+
+/*Até aqui header para todo o conteudo*/
+ul li{
+    list-style: none;
+}
+.slidershow {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+/*
+.middle{
+    po
+}*/
+.navegacao {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background: #fff;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+     height: 450px; 
+    /* height: 22px; */
+}
+
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -60%;
+}
+
+section{
+   
+    padding: 20px;
+    height: 800px;
+}
+
+#noticias{
+    width: 500px;
+ }
+#noticias h1{
+    background-color: brown;
+    width: 20%;
+ text-align: center;
+ color: white;
+ margin-left: 20px;
+ }
+#noticias img{
+    float: left;
+    padding: 20px;
+}
+#noticias p{
+    width: 800px;
+}
+#informacoes{
+    position: relative;
+    left: 10px;
+    /* width: 50%; vou ver */
+    padding: 70px;
+}
+
+.tudo {
+    background-color: rgb(26, 24, 24);
+    height: 400px;
+}
+
+.menuninha {
+    padding-left: 30px;
+    color: white;
+    float: left;
+    width: 350px;
+}
+
+.menuninha h2 {
+    padding-left: 50px;
+}
+
+.menuninha ul li a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    /* float: left; horizontal */
+}
+
+.menuninha ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+.menuninha ul li a:hover {
+    text-decoration: underline;
+}
+
+.Redes h2 {
+    color: white;
+    position: absolute;
+    left: 450px;
+}
+.Redes{
+    display: inline-block;
+}
+.Redes ul {
+    list-style: none;
+    padding: 70px;
+}
+.Redes img{
+    padding: 15px;
+}
+
+.Sobre {
+    color: white;
+    width: 500px;
+    float: right;
+    position: relative;
+   
+}
+
+.Fim {
+    background-color: rgb(136, 127, 127);
+    height: 53px;
+    padding: 2px;
+}
+
+.Fim p {
+    float: left;
+    color: white;
+    margin-left: 20px;
+}
+
+/*Primeira Pagina Ate aqui*/
+
+.diaSemana ul li {
+    display: inline-block;
+    color: white;
+    /* cor dos menus mas ainda não vai  */
+    margin-left: 40px;
+    /* espaçamento emtre as letras */
+    height: 20px;
+    /*cor*/
+    margin-top: 10px;
+}
+
+/*cor dos botoes*/
+.diaSemana ul li:hover {
+    border-bottom: 3px solid #00bac6;
+}
+
+.diaSemana ul li a:hover {
+    color: #00bac6;
+}
+
+.diaSemana ul li a {
+    color: white;
+    /* tag do link */
+    text-decoration: none;
+    /* remove o que estava embaico  */
+    font-weight: 15px;
+    text-transform: uppercase;
+    height: 20px;
+    /* letras maiculas ou miculas ou todas letras maiculas*/
+}
+
+.diaSemana ul {
+    background-color: rgba(41, 39, 39, 0.842);
+    height: 35px;
+}
+
+
+.Ney {
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    top: 41px;
+    left: 50%;
+    border: 2px solid #cccc;
+    overflow: hidden;
+    clear: both;
+}
+
+.nav-tabs {
+    width: 1100px;
+    height: 500px;
+    margin: 100px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.nav-tabs ul li {
+    float: left;
+}
+
+.nav-tabs label {
+    width: 100px;
+    padding: 25px;
+    background-color: #a17386;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*Mudança de cor da lebel quando o radio está checando*/
+.rd_tabs:checked~label {
+    background-color: #e54e43;
+}
+
+
+.rd_tabs {
+    display: none;
+}
+
+
+.content {
+    /*  border-top: 5px solid #e54e43;*/
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    height: 200px;
+    width: 1000px;
+    left: 0;
+
+}
+
+.rd_tabs:checked~.content {
+    display: block;
+}
+
+.content article {
+    padding: 10px;
+}
+
+.content img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    float: left;
+    width: 300px;
+
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.content ul li a span {
+    display: block;
+    color: white;
+    position: absolute;
+    margin: 120px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.content ul li a p {
+    display: block;
+    color: white;
+    position: absolute;
+    margin: 160px;
+    margin-left: 40px;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+.content ul li a:hover p {
+    border: 1px solid f00;
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+    display: block;
+}
+
+.content {
+    width: 1010px;
+}
+/*Equipe e Galeria de fotos */
+
+.card_img {
+    width: 287px;
+    height: 200px;
+    overflow: hidden;
+    margin: 25px;
+    top: 22%;
+}
+
+.small_img {
+    height: 100%;
+    cursor: pointer;
+    transition: all linear 0.5s;
+}
+
+.small_img:hover {
+    filter: grayscale(900%);
+    /*Mudar o tom para preto*/
+    transform: scale(1.6);
+}
+
+.row {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    position: relative;
+
+    /*ir com a pagina*/
+    /*display:inline-block*/
+
+}
+
+.row p {
+    position: absolute;
+    /* top: 20%; */
+    height: 22px;
+    background-color: black;
+    color: white;
+    width: 22%;
+    text-align: center;
+    cursor: pointer;
+}
+.texto ul li a {
+
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin: 20px auto;
+
+}
+
+.texto ul li {
+    /* padding-left: 90px; */
+    display: inline-block;
+    margin-left: 30px;
+    color: black;
+}
