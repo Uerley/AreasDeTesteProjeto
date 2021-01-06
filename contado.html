@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contado</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <a href="Home.html"><img src="radiologo.jpg" width="120px" /></a>
+        <a href="Home.html"><img src="Playing.png" width="70px" style="float: right;" /></a>
+        <div id="menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="programacao2.html">Programação</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contado.html">Contado</a></li>
+                <li><a href="equpe.html">Equipe</a></li>
+                <li><a href="galeria.html">Galeria de fotos</a></li>
+
+                <input placeholder="Procurando algo" type="text " />
+                <a href="login.html">
+                    <button>Login</button>
+                </a>
+                <div class="email">
+
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div id="formularios">
+        <div class="linha">
+
+            <div class="local">
+                <h3>Localização</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5987499633993!2d-37.07124298586021!3d-6.445534564819139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7afec3b2216fb6d%3A0xfd0a7ee7ca8257a9!2sIFRN%20Campus%20Caic%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1609333618232!5m2!1spt-BR!2sbr"
+                    width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <form action="post" action="">
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autofocus>
+                    <span class="hint">Por exemplo, nome@gmail.com</span>
+                    <span class="error">Preencha o seu e-mail corretamente</span>
+                </p>
+                <p>
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject">
+                    <span class="hint">Nós diga qual é o seu problema ou ideia</span>
+                </p>
+                <p>
+                    <label for="content">Mensagem</label>
+                    <textarea id="content"></textarea>
+                    <span class="hint">Escreva a sua mensagem</span>
+                </p>
+                <!-- <input type="text" name="email" id=""> -->
+                <!-- <input type="text"> -->
+                <!-- <input type="text"> -->
+
+                <button>Enviar mensagem</button>
+        </div>
+        </form>
+
+        <footer>
+            <div id="footer-maior">
+                <h2>Navegue no site</h2>
+                <ul>
+
+                    <li><a href="Home.html">Home</a></li>
+
+                    <li><a href="programacao2.html">Programação</a></li>
+
+                    <li><a href="videos.html">Video</a></li>
+
+                    <li><a href="contado.html">Contado</a></li>
+                    <li><a href="equpe.html">Equipe</a></li>
+                    <li><a href="galeria.html">Galeria de Fotos</a></li>
+                </ul>
+            </div>
+            <div id="redes-socias">
+                <h2>Fique conectado !</h2>
+
+                <ul>
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="you.png" width="80px" alt=""></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="insta.png" width="80px"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>Sobre</h2>
+            <p>
+                O projeto “Rádio Escolar” visa promover a cultura tecnológica e interação com as linguagens de mídias
+                no contexto escolar de forma a contribuir para o desenvolvimento educacional, social e cultural dos
+                alunos do IFRN campus Caicó. Sendo assim, o projeto prever a criação de uma radio que promova a
+                divulgação cultural da comunidade escolar e potencialização de atividades interdisciplinares.
+                Enfatizando o universo do aluno no desenvolvimento da programação e repertório musical, bem como
+                programações educativas e informativas
+            </p>
+
+        </footer>
+
+        <div id="modal-promo" class="modal-container">
+            <div class="modal">
+                <button class="fechar">x</button>
+                <img src="../img/emial.png" width="45px" alt="">
+                <h3 class="subtitulo">Faça o seu Pedido de Música</h3>
+                <form>
+
+                    <input type="text" class="input" placeholder="Nome">
+                    <input type="text" class="input" placeholder="Email">
+                    <input type="text" class="input" placeholder="Música">
+                    <input type="button" class="button" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <script src="pedirmusica.js"></script>
+
+</body>
+
+</html>
